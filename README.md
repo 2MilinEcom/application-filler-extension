@@ -1,17 +1,11 @@
 # Application Filler Extension
 
-Browser extension for user-configured application form filling.
+I built this extension to reduce the repeated typing involved in application forms. I keep the profile settings in the extension and review the filled fields on the page.
 
-## Technology
+I used JavaScript and Chrome extension APIs. The options page holds the profile settings, and the content script handles the form fields.
 
-JavaScript, Chrome Extensions.
+## Running it
 
-## Run locally
+I open Chrome’s extension management page, enable Developer mode, and load this repository as an unpacked extension. I configure my own information in the options page before using it.
 
-In Chrome, open the extension management page, enable Developer mode, and load this folder as an unpacked extension. Configure your own details in the extension options. Read the project guide before trying it on a form.
-
-## Portfolio snapshot
-
-This repository contains a source snapshot of a personal project. Personal records, credentials, browser sessions, local databases, and generated output are excluded. Use your own configuration and fictional data when evaluating it. Some integrations require external accounts or additional setup. This is a development project, with feature limitations documented in the source and guides.
-
-See [the project guide](PROJECT_GUIDE.md) for implementation details and earlier development notes. Verification claims in that guide describe the original working copy; they are not a fresh end-to-end test of this portfolio snapshot.
+I use a test form and fictional details when showing how the extension works. I kept the earlier setup notes in the [project guide](PROJECT_GUIDE.md).
