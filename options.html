@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font:15px system-ui,sans-serif;max-width:680px;margin:35px auto;padding:0 20px;color:#19283c}h1{font-size:24px}label{display:block;font-weight:600;margin:14px 0 5px}input,textarea{box-sizing:border-box;width:100%;padding:10px;border:1px solid #aab5c4;border-radius:6px;font:inherit}textarea{min-height:105px}button{margin-top:18px;background:#183c73;border:0;border-radius:7px;color:white;padding:12px 18px;cursor:pointer}p{line-height:1.5;color:#536171}#saved{color:#14632a;margin-left:12px}</style></head><body>
+<h1>Your autofill profile</h1><p>Stored only in this Chrome profile via extension local storage. When you use AI Fill, your saved profile and relevant form questions are sent to OpenAI to draft answers. Your API key is saved locally in this Chrome profile (not encrypted by the extension). Only enter information you are comfortable sharing with the application websites you visit.</p>
+<form id="form">
+<label for="api_key">OpenAI API key (required for AI answers)</label><input id="api_key" type="password" autocomplete="off" placeholder="sk-...">
+<p>Get an API key from the OpenAI Platform. API usage may be billed separately from ChatGPT. Do not share your key or use this extension on untrusted computers.</p>
+<label for="first_name">First name</label><input id="first_name" autocomplete="given-name">
+<label for="last_name">Last name</label><input id="last_name" autocomplete="family-name">
+<label for="email">Email</label><input id="email" type="email" autocomplete="email">
+<label for="phone">Phone</label><input id="phone" autocomplete="tel">
+<label for="city">City</label><input id="city">
+<label for="state">State</label><input id="state">
+<label for="zip_code">ZIP</label><input id="zip_code">
+<label for="country">Country</label><input id="country" value="United States">
+<label for="school">University</label><input id="school">
+<label for="degree">Degree</label><input id="degree">
+<label for="major">Major</label><input id="major">
+<label for="graduation_month">Graduation month</label><input id="graduation_month">
+<label for="graduation_year">Graduation year</label><input id="graduation_year">
+<label for="linkedin">LinkedIn URL</label><input id="linkedin">
+<label for="website">Portfolio / website URL (optional)</label><input id="website">
+<label for="authorized_us">Authorized to work in the US (Yes/No)</label><input id="authorized_us">
+<label for="sponsorship">Will need visa sponsorship (Yes/No)</label><input id="sponsorship">
+<label for="experience">Verified experience summary for optional essays</label><textarea id="experience" placeholder="Your accurate marketing/project experience, in your own words"></textarea>
+<label for="motivation">Why you're interested in marketing (optional)</label><textarea id="motivation"></textarea>
+<label for="achievements">Two genuine social-media posts, brand projects, outcomes (no invented metrics)</label><textarea id="achievements" placeholder="Describe your brands and two successful posts. Include actual results only."></textarea>
+<label for="aspirations">Dream brand / admired creator and why (optional)</label><textarea id="aspirations" placeholder="For example, why you admire Duolingo’s playful brand voice and are interested in OpenAI."></textarea>
+<button type="submit">Save profile</button><span id="saved" role="status"></span></form>
+<script src="options.js"></script></body></html>

@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Resume Filler — One-Click AI Autofill",
+  "version": "2.0.0",
+  "description": "One-click profile + AI autofill for job applications. Doesn't submit or invent unknown personal facts.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "action": {"default_popup": "popup.html", "default_title": "Fill application with AI"},
+  "options_page": "options.html"
+}
